@@ -2,7 +2,7 @@
 
 ### [Baifeng Shi](https://bfshi.github.io), [Trevor Darrell](https://people.eecs.berkeley.edu/~trevor/), [Xin Wang](https://xinw.ai/)
 
-<img src="spatial_bistable.png" alt="drawing" width="600"/>
+<img src="demo/spatial_bistable.png" alt="drawing" width="600"/>
 
 
 # Usage
