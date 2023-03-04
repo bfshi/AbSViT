@@ -23,6 +23,10 @@ In addition, please also install the magickwand library:
 apt-get install libmagickwand-dev
 ```
 
+## Demo
+
+[`demo/demo.ipynb`](demo/demo.ipynb) gives an example of visualizing AbSViT's attention map on single-object and multi-object images.
+
 ## Results and Pretrained Models
 
 | Name | ImageNet |   ImageNet-C (↓)   | PASCAL VOC | Cityscapes | ADE20K |                                       Weights                                        |
@@ -33,11 +37,6 @@ apt-get install libmagickwand-dev
 | AbSViT-S | 80.7 |        51.6        | - | - | - | [model](https://berkeley.box.com/shared/static/3wpkf5qo31ghb4dzehczup4pfh24xmve.pth) |
 | ViT-B | 80.8 |        49.3        | 80.1 | 75.3 | 45.2 | [model](https://berkeley.box.com/shared/static/6fszey9291pvnkwdpt5ngrhh0rcu1iqu.pth) |
 | AbSViT-B | 81.0 |        48.3        | 81.3 | 76.8 | 47.2 | [model](https://berkeley.box.com/shared/static/aain2svhs9lfvz8o21xao91dsnylgsot.pth) |
-
-
-## Demo
-
-[`demo/demo.ipynb`](demo/demo.ipynb) gives an example of visualizing AbSViT's attention map on single-object and multi-object images.
 
 
 ## Evaluation on Image Classification
