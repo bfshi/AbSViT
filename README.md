@@ -3,11 +3,11 @@
 
 This is the official codebase of AbSViT, from the following paper:
 
-Top-Down Attention from Analysis by Synthesis, CVPR 2023
-[Baifeng Shi](https://bfshi.github.io), [Trevor Darrell](https://people.eecs.berkeley.edu/~trevor/), and [Xin Wang](https://xinw.ai/)
+Top-Down Attention from Analysis by Synthesis, CVPR 2023\
+[Baifeng Shi](https://bfshi.github.io), [Trevor Darrell](https://people.eecs.berkeley.edu/~trevor/), and [Xin Wang](https://xinw.ai/)\
 UC Berkeley, Microsoft Research
 
-<img src="demo/intro.png" alt="drawing" width="1000"/>
+<img src="demo/intro.png" alt="drawing" width="800"/>
 
 
 # Usage
