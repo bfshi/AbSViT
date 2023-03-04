@@ -7,7 +7,7 @@ Top-Down Attention from Analysis by Synthesis, CVPR 2023
 [Baifeng Shi](https://bfshi.github.io), [Trevor Darrell](https://people.eecs.berkeley.edu/~trevor/), and [Xin Wang](https://xinw.ai/)
 UC Berkeley, Microsoft Research
 
-<img src="demo/spatial_bistable.png" alt="drawing" width="500"/>
+<img src="demo/intro.png" alt="drawing" width="500"/>
 
 
 # Usage
