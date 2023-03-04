@@ -1,6 +1,11 @@
 # Top-Down Attention from Analysis by Synthesis
 
-### [Baifeng Shi](https://bfshi.github.io), [Trevor Darrell](https://people.eecs.berkeley.edu/~trevor/), [Xin Wang](https://xinw.ai/)
+
+This is the official codebase of AbSViT, from the following paper:
+
+Top-Down Attention from Analysis by Synthesis, CVPR 2023
+[Baifeng Shi](https://bfshi.github.io), [Trevor Darrell](https://people.eecs.berkeley.edu/~trevor/), and [Xin Wang](https://xinw.ai/)
+UC Berkeley, Microsoft Research
 
 <img src="demo/spatial_bistable.png" alt="drawing" width="500"/>
 
