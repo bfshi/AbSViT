@@ -18,12 +18,26 @@ In addition, please also install the magickwand library:
 apt-get install libmagickwand-dev
 ```
 
+## Results and Pretrained Models
+
+| Name | ImageNet | ImageNet-C (&darr) | PASCAL VOC | Cityscapes | ADE20K |                                       Weights                                        |
+|:---:|:---:|:------------------:|:---:|:---:|:---:|:------------------------------------------------------------------------------------:|
+| ViT-Ti | 72.5 |        71.1        | - | - | - | [model](https://berkeley.box.com/shared/static/mw99ywof7ri7kczq79iwjia2att2dpmh.pth) |
+| AbSViT-Ti | 74.1 | 66.7 | - | - | - | [model](https://berkeley.box.com/shared/static/0n2tvn9hmx7bwv097nwb60vw1jf4841n.pth) |
+| ViT-S | 80.1 | 54.6 | - | - | - | [model](https://berkeley.box.com/shared/static/tftkkov22978lmvgv1g1cxuuk62iacn7.pth) |
+| AbSViT-S | 80.7 | 51.6 | - | - | - | [model](https://berkeley.box.com/shared/static/3wpkf5qo31ghb4dzehczup4pfh24xmve.pth) |
+| ViT-B | 80.8 | 49.3 | 80.1 | 75.3 | 45.2 | [model](https://berkeley.box.com/shared/static/6fszey9291pvnkwdpt5ngrhh0rcu1iqu.pth) |
+| AbSViT-B | 81.0 | 48.3 | 81.3 | 76.8 | 47.2 | [model](https://berkeley.box.com/shared/static/aain2svhs9lfvz8o21xao91dsnylgsot.pth) |
+
+
 ## Demo
+
+[`demo/demo.ipynb`](demo/demo.ipynb) gives an example of visualizing AbSViT's attention map on single-object and multi-object images.
 
 
 ## Evaluation
 
-To evaluate AbSViT_small on ImageNet, run
+For example, to evaluate AbSViT_small on ImageNet, run
 
 ```
 python main.py --model absvit_small_patch16_224 --data-path path/to/imagenet --eval --resume path/to/checkpoint
@@ -46,10 +60,9 @@ To train different model architectures, please change the arguments `--model`. W
 
 
 
-[//]: # (## Links )
+## Links
 
-[//]: # ()
-[//]: # (This codebase is built upon the official code of "[Towards Robust Vision Transformer]&#40;https://github.com/vtddggg/Robust-Vision-Transformer&#41;".)
+This codebase is built upon the official code of "[Visual Attention Emerges from Recurrent Sparse Reconstruction](https://github.com/bfshi/VARS)" and "[Towards Robust Vision Transformer](https://github.com/vtddggg/Robust-Vision-Transformer)".
 
 [//]: # ()
 [//]: # (## Citation)

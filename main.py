@@ -20,7 +20,7 @@ from timm.optim import create_optimizer
 from timm.utils import NativeScaler, get_state_dict, ModelEma
 
 import models.vit
-import models.vit_feedback_prompt
+import models.absvit
 from datasets import build_dataset, build_transform
 from engine import train_one_epoch, evaluate
 from utils import DistillationLoss

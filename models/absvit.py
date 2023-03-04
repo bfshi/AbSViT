@@ -162,6 +162,7 @@ class VisionTransformer(nn.Module):
         self.norm = norm_layer(embed_dim) if not use_fc_norm else nn.Identity()
         self.decoders = nn.ModuleList([Decode_Block(embed_dim) for _ in range(depth)])
         self.prompt = torch.nn.parameter.Parameter(torch.randn(self.embed_dim), requires_grad=True)
+        self.feedback_aug = 1
 
         # Classifier Head
         self.fc_norm = norm_layer(embed_dim) if use_fc_norm else nn.Identity()
@@ -250,7 +251,7 @@ class VisionTransformer(nn.Module):
 
         cos_sim = F.normalize(x, dim=-1) @ F.normalize(self.prompt[None, ..., None], dim=1)  # B, N, 1
         mask = cos_sim.clamp(0, 1)
-        x = x * mask
+        x = x * mask * self.feedback_aug
         td = self.feedback(x)
 
         x, in_var, out_var = self.forward_features(input, td)
@@ -324,6 +325,20 @@ def absvit_base_patch16_224(pretrained=False, **kwargs):
     if pretrained:
         checkpoint = torch.hub.load_state_dict_from_url(
             url="https://dl.fbaipublicfiles.com/deit/deit_base_patch16_224-b5f2ef4d.pth",
+            map_location="cpu", check_hash=True
+        )
+        model.load_state_dict(checkpoint["model"])
+    return model
+
+@register_model
+def absvit_tiny_patch8_224_gap(pretrained=False, **kwargs):
+    model = VisionTransformer(
+        patch_size=8, embed_dim=192, depth=12, num_heads=3, mlp_ratio=4, qkv_bias=True,
+        norm_layer=partial(nn.LayerNorm, eps=1e-6), global_pool='avg', **kwargs)
+    model.default_cfg = _cfg()
+    if pretrained:
+        checkpoint = torch.hub.load_state_dict_from_url(
+            url="https://dl.fbaipublicfiles.com/deit/deit_tiny_patch16_224-a1311bcf.pth",
             map_location="cpu", check_hash=True
         )
         model.load_state_dict(checkpoint["model"])

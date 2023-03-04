@@ -1,2 +1,8 @@
 .idea/
 __pycache__/
+.ipynb_checkpoints/
+demo/.ipynb_checkpoints
+demo/output
+demo/.*
+models/.ipynb_checkpoints
+models/.*
