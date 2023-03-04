@@ -40,7 +40,7 @@ apt-get install libmagickwand-dev
 [`demo/demo.ipynb`](demo/demo.ipynb) gives an example of visualizing AbSViT's attention map on single-object and multi-object images.
 
 
-## Evaluation
+## Evaluation on Image Classification
 
 For example, to evaluate AbSViT_small on ImageNet, run
 
@@ -52,6 +52,10 @@ To evaluate on robustness benchmarks, please add one of `--inc_path /path/to/ima
 
 If you want to test the accuracy under adversarial attackers, please add `--fgsm_test` or `--pgd_test`.
 
+
+## Evaluation on Semantic Segmentation
+
+Please see ['segmentation'](segmentation) for instructions.
 
 ## Training
 
