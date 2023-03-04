@@ -55,7 +55,7 @@ If you want to test the accuracy under adversarial attackers, please add `--fgsm
 
 ## Evaluation on Semantic Segmentation
 
-Please see ['segmentation'](segmentation) for instructions.
+Please see [`segmentation`](segmentation) for instructions.
 
 ## Training
 
