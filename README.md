@@ -10,7 +10,15 @@ UC Berkeley, Microsoft Research
 <img src="demo/intro.png" alt="drawing" width="800"/>
 
 
-# Usage
+## To-Dos
+
+- [ ] Finetuning on Vision-Language datasets
+
+
+<!-- ✅ ⬜️  -->
+
+
+## Environment
 
 Install PyTorch 1.7.0+ and torchvision 0.8.1+ from the official website.
 
@@ -66,7 +74,9 @@ python -m torch.distributed.launch --nproc_per_node=8 --master_port 12345  main.
 
 To train different model architectures, please change the arguments `--model`. We provide choices of ViT_{tiny, small, base}' and AbSViT_{tiny, small, base}. 
 
+## Finetuning on Vision-Language Dataset
 
+Please see [`vision_language`](vision_language) for instructions.
 
 ## Links
 
