@@ -35,7 +35,7 @@ apt-get install libmagickwand-dev
 
 [`demo/demo.ipynb`](demo/demo.ipynb) gives an example of visualizing AbSViT's attention map on single-object and multi-object images.
 
-## Results and Pretrained Models
+## Model Zoo
 
 | Name | ImageNet |   ImageNet-C (↓)   | PASCAL VOC | Cityscapes | ADE20K |                                       Weights                                        |
 |:---:|:---:|:------------------:|:---:|:---:|:---:|:------------------------------------------------------------------------------------:|
