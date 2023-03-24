@@ -7,6 +7,8 @@ Top-Down Visual Attention from Analysis by Synthesis, CVPR 2023\
 [Baifeng Shi](https://bfshi.github.io), [Trevor Darrell](https://people.eecs.berkeley.edu/~trevor/), and [Xin Wang](https://xinw.ai/)\
 UC Berkeley, Microsoft Research
 
+[Website](https://sites.google.com/view/absvit) | [Paper](https://arxiv.org/pdf/2303.13043.pdf)
+
 <img src="demo/intro.png" alt="drawing" width="800"/>
 
 
