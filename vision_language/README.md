@@ -12,7 +12,7 @@ After installing the environment and preparing the VQAv2 data, `demo/visualize_a
 
 ## Training on VQAv2
 
-Please first download the pre-trained ViT ([here](https://berkeley.box.com/shared/static/6fszey9291pvnkwdpt5ngrhh0rcu1iqu.pth)) or AbSViT([here](https://berkeley.box.com/shared/static/ejf7a2vnzg8pmwty0ih4temm2vgw14u5.pth)). 
+Please first download the pre-trained ViT ([here](https://berkeley.box.com/shared/static/6fszey9291pvnkwdpt5ngrhh0rcu1iqu.pth)) or AbSViT ([here](https://berkeley.box.com/shared/static/ejf7a2vnzg8pmwty0ih4temm2vgw14u5.pth)). 
 
 To train ViT on VQAv2:
 
