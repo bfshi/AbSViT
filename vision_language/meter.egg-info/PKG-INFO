@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: meter
+Version: 0.1.0
+Summary: METER: Multimodal End-to-end TransformER
+Home-page: https://github.com/zdou0830/METER
+Author: Microsoft Corporation
+Author-email: zdou0830@gmail.com
+License: MIT
+Keywords: vision and language pretraining
+License-File: LICENSE

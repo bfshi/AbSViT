@@ -14,7 +14,7 @@ UC Berkeley, Microsoft Research
 
 ## To-Dos
 
-- [ ] Finetuning on Vision-Language datasets
+- [x] Finetuning on Vision-Language datasets
 
 
 <!-- ✅ ⬜️  -->
@@ -35,7 +35,9 @@ apt-get install libmagickwand-dev
 
 ## Demo
 
-[`demo/demo.ipynb`](demo/demo.ipynb) gives an example of visualizing AbSViT's attention map on single-object and multi-object images.
+ImageNet demo: [`demo/demo.ipynb`](demo/demo.ipynb) gives an example of visualizing AbSViT's attention map on single-object and multi-object images in ImageNet. Since the model is only trained on single-object recognition, the top-down attention is quite weak.
+
+VQA demo: [`vision_language/demo/visualize_attention.ipynb`](vision_language/demo/visualize_attention.ipynb) gives an example of how AbSViT's top-down attention is adaptive to different questions on the same image.
 
 ## Model Zoo
 
@@ -84,24 +86,20 @@ Please see [`vision_language`](vision_language) for instructions.
 
 This codebase is built upon the official code of "[Visual Attention Emerges from Recurrent Sparse Reconstruction](https://github.com/bfshi/VARS)" and "[Towards Robust Vision Transformer](https://github.com/vtddggg/Robust-Vision-Transformer)".
 
-[//]: # ()
-[//]: # (## Citation)
 
-[//]: # (If you found this code helpful, please consider citing our work: )
+## Citation
 
-[//]: # ()
-[//]: # (```bibtext)
+If you found this code helpful, please consider citing our work: 
 
-[//]: # (@article{shi2022visual,)
 
-[//]: # (  title={Visual Attention Emerges from Recurrent Sparse Reconstruction},)
+```bibtext
 
-[//]: # (  author={Shi, Baifeng and Song, Yale and Joshi, Neel and Darrell, Trevor and Wang, Xin},)
+@inproceedings{shi2023top,
+  title={Top-Down Visual Attention from Analysis by Synthesis},
+  author={Shi, Baifeng and Darrell, Trevor and Wang, Xin},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={2102--2112},
+  year={2023}
+}
 
-[//]: # (  journal={arXiv preprint arXiv:2204.10962},)
-
-[//]: # (  year={2022})
-
-[//]: # (})
-
-[//]: # (```)
+```

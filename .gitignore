@@ -6,3 +6,4 @@ demo/output
 demo/.*
 models/.ipynb_checkpoints
 models/.*
+vision_language/demo/.*
