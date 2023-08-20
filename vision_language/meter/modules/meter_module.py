@@ -217,7 +217,10 @@ class METERTransformerSS(pl.LightningModule):
         extend_text_masks = self.text_transformer.get_extended_attention_mask(text_masks, input_shape, device)
         for layer in self.text_transformer.encoder.layer:
             text_embeds = layer(text_embeds, extend_text_masks)[0]
-        prompt = text_embeds.mean(dim=1)
+        if self.hparams.config["loss_names"]["vqa"] > 0:
+            prompt = text_embeds.mean(dim=1)
+        else:
+            prompt = text_embeds[torch.arange(text_embeds.shape[0]), (text_ids == 2).to(torch.float).argmax(dim=-1)]
         text_embeds = self.cross_modal_text_transform(text_embeds)
 
         if self.hparams.config['feedback']:
